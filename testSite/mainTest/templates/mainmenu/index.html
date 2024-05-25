@@ -1,14 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Menu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'MainTest/style.css' %}">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <script src="main.js"></script>
-    <p class="paragraph">Hello, User!</p>
+    <script src="{% static 'MainTest/main.js' %}"></script>
+
+    <p class="mainText">Hello, User!</p>
+    
+    <div id="output"></div>
 </body>
 </html>
